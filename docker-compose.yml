@@ -1,0 +1,18 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+    working_dir: /app
+    restart: unless-stopped
+
+  test:
+    build: .
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: bash -c "export PYTHONPATH=/app && pytest --maxfail=1 --disable-warnings -q"

@@ -1,0 +1,5 @@
+msgid "welcome_message"
+msgstr "Welcome to the Solar Watcher API"
+
+msgid "jwt_invalid"
+msgstr "Invalid or expired authentication token"

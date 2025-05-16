@@ -1,0 +1,18 @@
+fastapi
+uvicorn
+httpx
+python-dotenv
+fastapi-babel
+
+#FOR JWT
+python-jose[cryptography]
+passlib[bcrypt]
+
+#LINTERS
+flake8
+black
+isort
+
+#TESTS
+pytest
+pytest-asyncio
